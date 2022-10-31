@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<body>
+<p>Estás buscando: <strong>{{query}}</strong></p>
+
+{% if articulos %}
+    <p>Artículos encontrados: {{articulos|length}} articulos</p>
+    <ul>
+        {% for articulo in articulos %}
+            <li>
+                {{articulo.nombre}} &nbsp; {{articulo.seccion}} &nbsp; {{articulo.precio}}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No está el artículo solicitado</p>
+{% endif %}
+</body>
+</html>
+
