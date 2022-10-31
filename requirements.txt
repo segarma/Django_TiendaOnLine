@@ -1,0 +1,6 @@
+distlib==0.3.6
+filelock==3.8.0
+platformdirs==2.5.2
+pynput==1.7.6
+six==1.16.0
+virtualenv==20.16.5
